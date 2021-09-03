@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1021286790527",
+    "project_id": "chat-message-59088",
+    "storage_bucket": "chat-message-59088.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021286790527:android:576cbd45b974fc9e75564a",
+        "android_client_info": {
+          "package_name": "com.leskov.chatmessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021286790527-ipqtoc9500mmpkkgr8knj8m2bsg138tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDXo7zgku9GWWUTfk597HjOP3DB_Pc2d8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021286790527-ipqtoc9500mmpkkgr8knj8m2bsg138tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
