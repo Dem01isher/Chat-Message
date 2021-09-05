@@ -17,11 +17,11 @@ import com.google.android.material.snackbar.Snackbar
  *  Developer: Sergey Leskov
  */
 
-abstract class BaseBindingFragment<out Binding : ViewDataBinding> : Fragment() {
+abstract class BaseBindingFragment<Binding : ViewDataBinding> : Fragment() {
 
-    private lateinit var binding: Binding
+    protected lateinit var binding: Binding
 
-    abstract val layoutId : Int
+    protected abstract val layoutId : Int
 
     override fun onCreateView(
         inflater: LayoutInflater,

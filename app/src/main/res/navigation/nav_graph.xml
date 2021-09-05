@@ -13,9 +13,18 @@
             app:destination="@id/authFragment"
             app:popUpTo="@id/nav_graph.xml"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_chatListFragment"
+            app:destination="@id/chatListFragment"
+            app:popUpTo="@id/nav_graph.xml"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/authFragment"
         android:name="com.leskov.chatmessage.views.auth.AuthFragment"
         android:label="AuthFragment" />
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.leskov.chatmessage.views.chat_list.ChatListFragment"
+        android:label="ChatListFragment" />
 </navigation>

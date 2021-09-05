@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.leskov.chatmessage.R
 import com.leskov.chatmessage.core.BaseBindingFragment
 import com.leskov.chatmessage.databinding.FragmentSplashBinding
@@ -23,7 +25,11 @@ class SplashFragment : BaseBindingFragment<FragmentSplashBinding>() {
 
         lifecycleScope.launchWhenStarted {
             delay(3000)
-            navigate(R.id.action_splashFragment_to_authFragment)
+            if (FirebaseAuth.getInstance().currentUser != null){
+                navigate(R.id.action_splashFragment_to_chatListFragment)
+            } else {
+                navigate(R.id.action_splashFragment_to_authFragment)
+            }
         }
     }
 }
